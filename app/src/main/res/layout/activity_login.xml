@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/username_System"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/username"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Enter Username Here"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content" />
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_System"
+        android:layout_below="@+id/username_System"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/password"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Enter Password Here"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmPass_System"
+        android:layout_below="@+id/password_System"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/confirm_Password"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Confirm Password Here"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_area"
+        android:layout_alignRight="@id/confirmPass_System"
+        android:layout_below="@id/confirmPass_System"
+        android:text="@string/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
